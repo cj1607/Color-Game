@@ -10,13 +10,13 @@
 </head>
 <body>
     <div id="display-container">
-        <div class="header flex-space" data-testid="colorBox">
+        <div class="header flex-space">
             <div class="title" >
-                <p>Color Guessing Game</p>
+                <p data-testid="gameInstructions">Color Guessing Game</p>
             </div>
-            <div class="timer" ></div>
+            <div class="timer"></div>
         </div>
-        <div id="container" data-testid="colorOption">
+        <div id="container" data-testid="colorBox">
             <!-- Questions and options are displayed here-->
         </div>
         <div class="flex-space" data-testid="gameInstructions">
@@ -27,7 +27,7 @@
         </div>
     </div>
 
-    <div class="start-screen" data-testid="colorOption">
+    <div class="start-screen">
         <button id="start-button">Start</button>
     </div>
     <div class="score-container hide" data-testid="gameStatus">

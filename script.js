@@ -119,11 +119,11 @@ function quizCreator() {
         div.appendChild(questionDiv);
         //Options
         div.innerHTML += `
-    <div class="button-container">
-    <button class="option-div" onclick="checker(this)" style="background-color: ${i.options[0]}" data-option="${i.options[0]}"></button>
-    <button class="option-div" onclick="checker(this)" style="background-color: ${i.options[1]}" data-option="${i.options[1]}"></button>
-    <button class="option-div" onclick="checker(this)" style="background-color: ${i.options[2]}" data-option="${i.options[2]}"></button>
-    <button class="option-div" onclick="checker(this)" style="background-color: ${i.options[3]}" data-option="${i.options[3]}"></button>
+    <div class="button-container" data-testid="colorOption">
+    <button class="option-div" onclick="checker(this)" style="background-color: ${i.options[0]}" data-option="${i.options[0]}"data-testid="colorBox"></button>
+    <button class="option-div" onclick="checker(this)" style="background-color: ${i.options[1]}" data-option="${i.options[1]}"data-testid="colorBox"></button>
+    <button class="option-div" onclick="checker(this)" style="background-color: ${i.options[2]}" data-option="${i.options[2]}"data-testid="colorBox"></button>
+    <button class="option-div" onclick="checker(this)" style="background-color: ${i.options[3]}" data-option="${i.options[3]}"data-testid="colorBox"></button>
     </div>
     `;
         quizContainer.appendChild(div);
